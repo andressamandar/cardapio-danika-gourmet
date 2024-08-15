@@ -1,0 +1,20 @@
+.contatos {
+    text-align: center;
+    color: #ff69b4; /* Rosa claro */
+  }
+  
+  .contatos ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contatos ul li {
+    margin: 10px 0;
+  }
+  
+  .contatos ul li a {
+    text-decoration: none;
+    color: #ff1493; /* Rosa mais escuro */
+    font-weight: bold;
+  }
+  
