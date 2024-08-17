@@ -13,6 +13,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+p { 
+  text-align: justify;
+}
+
 .logo {
   background-color: #ffc0cb;
   width: 50px;                  /* Ajuste o tamanho da logo */
@@ -83,4 +87,37 @@ h2 {
   margin-top: 10px;
   font-size: 1rem;             /* Ajuste o tamanho da fonte do preço, se necessário */
   font-family: 'Quicksand', sans-serif;
+}
+
+.rodape  { 
+  background: #ffc0cb;
+  color: white;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
 }
