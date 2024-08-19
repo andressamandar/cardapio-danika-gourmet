@@ -6,19 +6,33 @@
 <link
   href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
   rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <section id="cardapio">
   <div class="header">
     <img src="assets/danika-png.png" alt="Danika Gourmet Logo" class="logo">
     <h2>DANIKA GOURMET</h2>
   </div>
-  <div class="produtos">
-    <hr>
-    <h3 class="lista-produtos">Confira Nosso Cardápio!</h3>
-    <hr>
-    
+  <div class="botoes">
+    <button mat-button (click)="alternarProdutos()">Cardápio</button>
+    <button mat-button (click)="alternarMarcas()">Marcas Usadas</button>
+    <button mat-button (click)="openWhatsApp()">Whatsapp</button>
+  </div>
+
+  <div class="ingredientes-usados" *ngIf="mostrarIngredientes">
+    <h3>Marcas que Utilizo:</h3>
+    <ul>
+      <li>Chocolate nobre, meio amargo e ao leite Sicão (não trabalho com fracionados).</li>
+      <li>Chocolate branco Genuine</li>
+      <li>Leite Condensado Moça/Itambé</li>
+      <li>Nutella</li>
+    </ul>
+
+  </div>
+  <div class="produtos" *ngIf="mostrarProdutos">
+
     <div class="produto">
-      <img src="" alt="banoffe" class="produto-imagem">
+      <img src="assets/banoffe.jpeg" alt="banoffe" class="produto-imagem">
       <div class="produto-info">
         <h4>Banoffe</h4>
         <p>Massa feita com bolacha maisena, recheio de doce de leite caseiro e banana, e cobertura de chantininho e
@@ -38,7 +52,7 @@
       </div>
     </div>
     <div class="produto">
-      <img src="" alt="torta-de-limao" class="produto-imagem">
+      <img src="assets/tortalimao.jpeg" alt="torta-de-limao" class="produto-imagem">
       <div class="produto-info">
         <h4>Torta de Limão</h4>
         <p>Massa Pie (feita a base de farinha e manteiga), recheio de mousse de limão e cobertura de merengue suíço
@@ -78,7 +92,8 @@
       </div>
     </div>
   </div>
-  <mat-paginator class="rodape" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page">
+  <mat-paginator class="rodape" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
+    aria-label="Select page">
   </mat-paginator>
 
 

@@ -5,18 +5,19 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { CardapioComponent } from './components/cardapio/cardapio.component';
 import { ContatosComponent } from './components/contatos/contatos.component';
-import { appRoutes } from './app.routes';  // Certifique-se de que isso está correto
+import { appRoutes } from './app.routes'; 
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,  // Verifique se o MenuComponent está declarado aqui
+    MenuComponent,  // 
     CardapioComponent,
     ContatosComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)  // Verifique se está usando appRoutes
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,47 @@
+@media (max-width: 600px) {
+  .botoes {
+    flex-direction: column; /* Botões empilhados em telas pequenas */
+    margin-bottom: 10px;
+}}
+
+.produto-imagem {
+    width: 100px; /* Ajuste o tamanho da imagem dos produtos */
+}
+
 #cardapio {
   text-align: center;
   color: palevioletred; /* Rosa claro */
 }
+
+.ingredientes-usados{
+  text-align: left;
+
+}
+
+.ingredientes-usados h3 {
+  margin-left: 30px;
+  border: 5px #FFC0CB;
+}
+
+.botoes button {
+  background-color: #FFC0CB; /* Rosa claro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+  margin: 8px; /* Espaçamento entre os botões */
+}
+
+/* Estilo para o botão quando o mouse está sobre ele */
+.botoes button:hover {
+  background-color: white;
+  color: #FFC0CB; /* Rosa claro */
+  border: 1px solid #FFC0CB; /* Adiciona uma borda rosa */
+}
+
 
 .header {
   background: #ffc0cb;
@@ -9,8 +49,12 @@
   justify-content: center;      /* Centraliza o logo e o título */
   align-items: center;          /* Alinha verticalmente ao centro */
   margin: 0;                    /* Remove margem superior */
-  padding: 10px;                /* Ajuste o preenchimento conforme necessário */
+  padding: 10px;
   font-family: "Montserrat", sans-serif;
+}
+
+h4 {
+  margin-top: 10px;
 }
 
 p { 
@@ -27,8 +71,9 @@ p {
 h2 {
   background: #ffc0cb;
   color: white;
-  margin: 0;
+  margin-top: 15px;
   padding: 10px;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
 
 }
@@ -37,6 +82,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5px 0;          /* Menos espaço entre os produtos */
+  padding: 5px; 
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -49,7 +96,7 @@ h2 {
   background-color: #fff;
   border: 1px solid #ffc0cb;
   border-radius: 8px;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra atrás do produto */
   font-family: 'Quicksand', sans-serif;
 }
@@ -71,7 +118,7 @@ h2 {
 
 .produto-info h3 {
   margin: 0;
-  font-size: 1.2rem;          /* Ajusta o tamanho do nome do produto */
+  font-size: 0.8rem;          /* Ajusta o tamanho do nome do produto */
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -84,8 +131,8 @@ h2 {
 .preco {
   font-weight: bold;
   color: #9b9c9c7e; /* Rosa mais escuro */
-  margin-top: 10px;
-  font-size: 1rem;             /* Ajuste o tamanho da fonte do preço, se necessário */
+  margin-top: 8px;
+  font-size: 0.8rem;             /* Ajuste o tamanho da fonte do preço, se necessário */
   font-family: 'Quicksand', sans-serif;
 }
 
