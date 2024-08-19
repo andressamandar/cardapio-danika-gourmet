@@ -4,14 +4,15 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) { /* 600px = 37.5rem */
   .botoes {
     flex-direction: column; /* Botões empilhados em telas pequenas */
-    margin-bottom: 10px;
-}}
+    margin-bottom: 0.625rem; /* 10px = 0.625rem */
+  }
+}
 
 .produto-imagem {
-    width: 100px; /* Ajuste o tamanho da imagem dos produtos */
+  width: 6.25rem; /* 100px = 6.25rem */
 }
 
 #cardapio {
@@ -19,35 +20,33 @@
   color: palevioletred; /* Rosa claro */
 }
 
-.ingredientes-usados{
+.ingredientes-usados {
   text-align: left;
-
 }
 
 .ingredientes-usados h3 {
-  margin-left: 30px;
-  border: 5px #FFC0CB;
+  margin-left: 1.875rem; /* 30px = 1.875rem */
+  border: 0.3125rem solid #FFC0CB; /* 5px = 0.3125rem */
 }
 
 .botoes button {
   background-color: #FFC0CB; /* Rosa claro */
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 12px;
-  border-radius: 5px;
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  font-size: 0.75rem; /* 12px = 0.75rem */
+  border-radius: 0.3125rem; /* 5px = 0.3125rem */
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
-  margin: 8px; /* Espaçamento entre os botões */
+  margin: 0.5rem; /* 8px = 0.5rem */
 }
 
 /* Estilo para o botão quando o mouse está sobre ele */
 .botoes button:hover {
   background-color: white;
   color: #FFC0CB; /* Rosa claro */
-  border: 1px solid #FFC0CB; /* Adiciona uma borda rosa */
+  border: 0.0625rem solid #FFC0CB; /* 1px = 0.0625rem */
 }
-
 
 .header {
   background: #ffc0cb;
@@ -55,12 +54,12 @@
   justify-content: center;      /* Centraliza o logo e o título */
   align-items: center;          /* Alinha verticalmente ao centro */
   margin: 0;                    /* Remove margem superior */
-  padding: 10px;
+  padding: 0.625rem; /* 10px = 0.625rem */
   font-family: "Montserrat", sans-serif;
 }
 
 h4 {
-  margin-top: 10px;
+  margin-top: 0.625rem; /* 10px = 0.625rem */
 }
 
 p { 
@@ -69,49 +68,48 @@ p {
 
 .logo {
   background-color: #ffc0cb;
-  width: 50px;                  /* Ajuste o tamanho da logo */
-  height: auto;                 /* Mantém a proporção da logo */
-  margin-right: 10px;           /* Espaçamento entre logo e texto */
+  width: 3.125rem; /* 50px = 3.125rem */
+  height: auto;                 
+  margin-right: 0.625rem; /* 10px = 0.625rem */
 }
 
 h2 {
   background: #ffc0cb;
   color: white;
-  margin-top: 15px;
-  padding: 10px;
+  margin-top: 0.9375rem; /* 15px = 0.9375rem */
+  padding: 0.625rem; /* 10px = 0.625rem */
   font-size: 1.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
-
+  text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
 }
 
 .produtos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5px 0;          /* Menos espaço entre os produtos */
-  padding: 5px; 
+  margin: 0.3125rem 0; /* 5px = 0.3125rem */
+  padding: 0.3125rem; /* 5px = 0.3125rem */
   font-family: 'Quicksand', sans-serif;
 }
 
 .produto {
   display: flex;
   align-items: flex-start;      /* Alinha itens no início do contêiner */
-  margin: 10px 0;              /* Espaçamento entre os produtos */
+  margin: 0.625rem 0; /* 10px = 0.625rem */
   width: 100%;
-  max-width: 800px;            /* Largura máxima do contêiner do produto */
+  max-width: 50rem; /* 800px = 50rem */
   background-color: #fff;
-  border: 1px solid #ffc0cb;
-  border-radius: 8px;
-  padding: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra atrás do produto */
+  border: 0.0625rem solid #ffc0cb; /* 1px = 0.0625rem */
+  border-radius: 0.5rem; /* 8px = 0.5rem */
+  padding: 0.3125rem; /* 5px = 0.3125rem */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 4px 8px = 0.25rem 0.5rem */
   font-family: 'Quicksand', sans-serif;
 }
 
 .produto-imagem {
-  width: 110px;                /* Ajuste o tamanho da imagem */
+  width: 6.875rem; /* 110px = 6.875rem */
   height: auto;
-  border-radius: 8px;
-  margin: 15px;         /* Espaçamento entre a imagem e o texto */
+  border-radius: 0.5rem; /* 8px = 0.5rem */
+  margin: 0.9375rem; /* 15px = 0.9375rem */
 }
 
 .produto-info {
@@ -124,21 +122,21 @@ h2 {
 
 .produto-info h3 {
   margin: 0;
-  font-size: 0.8rem;          /* Ajusta o tamanho do nome do produto */
+  font-size: 0.8rem;          
   font-family: 'Quicksand', sans-serif;
 }
 
 .produto-info p {
   margin: 0;
-  font-size: 0.9rem;          /* Ajuste o tamanho da fonte do parágrafo */
+  font-size: 0.9rem;
   font-family: 'Quicksand', sans-serif;
 }
 
 .preco {
   font-weight: bold;
   color: #9b9c9c7e; /* Rosa mais escuro */
-  margin-top: 8px;
-  font-size: 0.8rem;             /* Ajuste o tamanho da fonte do preço, se necessário */
+  margin-top: 0.5rem; /* 8px = 0.5rem */
+  font-size: 0.8rem;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -149,18 +147,18 @@ h2 {
 
 .example-label {
   display: table-cell;
-  font-size: 14px;
-  margin-left: 8px;
-  min-width: 120px;
+  font-size: 0.875rem; /* 14px = 0.875rem */
+  margin-left: 0.5rem; /* 8px = 0.5rem */
+  min-width: 7.5rem; /* 120px = 7.5rem */
 }
 
 .example-button-row {
   display: table-cell;
-  max-width: 600px;
+  max-width: 37.5rem; /* 600px = 37.5rem */
 }
 
 .example-button-row .mat-mdc-button-base {
-  margin: 8px 8px 8px 0;
+  margin: 0.5rem 0.5rem 0.5rem 0; /* 8px = 0.5rem */
 }
 
 .example-flex-container {
@@ -172,5 +170,5 @@ h2 {
 .example-button-container {
   display: flex;
   justify-content: center;
-  width: 120px;
+  width: 7.5rem; /* 120px = 7.5rem */
 }
