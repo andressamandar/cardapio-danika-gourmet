@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #ffffff; /* Defina o fundo como branco */
+    color: #000000; /* Defina o texto como preto ou outra cor visível */
+  }
+}
+
+
 @media (max-width: 37.5rem) { /* 600px = 37.5rem */
   .botoes {
     flex-direction: column; /* Botões empilhados em telas pequenas */

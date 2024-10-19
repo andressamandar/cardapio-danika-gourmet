@@ -29,69 +29,77 @@
     </ul>
 
   </div>
-  <div class="produtos" *ngIf="mostrarProdutos">
+  <mat-tab-group *ngIf="mostrarProdutos">
+    <mat-tab label="Bolos e Tortas">
+      <div class="produtos" *ngIf="mostrarProdutos">
 
-    <div class="produto">
-      <img src="assets/banoffe.jpeg" alt="banoffe" class="produto-imagem">
-      <div class="produto-info">
-        <h4>Banoffe</h4>
-        <p>Massa feita com bolacha maisena, recheio de doce de leite caseiro e banana, e cobertura de chantininho e
-          decoração em cacau ou canela.</p>
-        <span class="preco">Tamanho G (serve até 12 fatias): R$ 165,00</span>
-        <span class="preco">Tamanho P (serve até 6 fatias): R$ 82,00</span>
+        <div class="produto">
+          <img src="assets/banoffe.jpeg" alt="banoffe" class="produto-imagem">
+          <div class="produto-info">
+            <h4>Banoffe</h4>
+            <p>Massa feita com bolacha maisena, recheio de doce de leite caseiro e banana, e cobertura de chantininho e
+              decoração em cacau ou canela.</p>
+            <span class="preco">Tamanho G (serve até 12 fatias): R$ 165,00</span>
+            <span class="preco">Tamanho P (serve até 6 fatias): R$ 82,00</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="" alt="morangoffe-uvanoffe" class="produto-imagem">
+          <div class="produto-info">
+            <h4>Morangoffe | Uvanoffe </h4>
+            <p>Massa feita com bolacha negresco, recheio de leite condensado cremoso e cobertura de chantininho com morangos ou uvas,
+              e suspiros.</p>
+            <span class="preco">Tamanho G (serve até 12 fatias): R$ 210,00</span>
+            <span class="preco">Tamanho P (serve até 6 fatias): R$ 105,00</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/tortalimao.jpeg" alt="torta-de-limao" class="produto-imagem">
+          <div class="produto-info">
+            <h4>Torta de Limão</h4>
+            <p>Massa Pie (feita a base de farinha e manteiga), recheio de mousse de limão e cobertura de merengue suíço
+              (esse merengue é pré aquecido, onde a base que são as claras, não é servido cru)</p>
+            <span class="preco">Tamanho G (serve até 12 fatias): R$ 135,00</span>
+            <span class="preco">Tamanho P (serve até 6 fatias): R$ 68,00</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="" alt="torta-ganache" class="produto-imagem">
+          <div class="produto-info">
+            <h4>Torta Ganache</h4>
+            <p>Massa Pie de cacau black (callebout), recheio 1: Ganache trufada branca | recheio 2: Ganache trufada meio
+              amargo | Cobertura de ganache e raspas de chocolate.
+            </p>
+            <span class="preco">Tamanho G (serve até 12 fatias): R$ 220,00</span>
+            <span class="preco">Tamanho P (serve até 6 fatias): R$ 110,00</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="" alt="torta-palha-italiana" class="produto-imagem">
+          <div class="produto-info">
+            <h4>Torta Palha Italiana</h4>
+            <p>Massa de brigadeiro com bolacha maisena, cobertura de ganache e decoração com raspas de chocolate.
+            </p>
+            <span class="preco">Tamanho P (serve até 6 fatias): R$ 140,00</span>
+          </div>
+        </div>
+        <div class="produto">
+          <img src="assets/monoffe.jpeg" alt="monoffe" class="produto-imagem">
+          <div class="produto-info">
+            <h4>Monoffe Nutella </h4>
+            <p>Massa feita com bolacha negresco, recheio de nutella e cobertura de chantininho com morangos e suspiros
+            </p>
+            <span class="preco">Tamanho G (serve até 12 fatias): R$ 240,00</span>
+            <span class="preco">Tamanho P (serve até 6 fatias): R$ 120,00</span>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="produto">
-      <img src="" alt="morangoffe-uvanoffe" class="produto-imagem">
-      <div class="produto-info">
-        <h4>Morangoffe | Uvanoffe </h4>
-        <p>Massa feita com bolacha negresco, recheio de leite condensado cremoso e cobertura de chantininho com morangos
-          e suspiros.</p>
-        <span class="preco">Tamanho G (serve até 12 fatias): R$ 210,00</span>
-        <span class="preco">Tamanho P (serve até 6 fatias): R$ 105,00</span>
-      </div>
-    </div>
-    <div class="produto">
-      <img src="assets/tortalimao.jpeg" alt="torta-de-limao" class="produto-imagem">
-      <div class="produto-info">
-        <h4>Torta de Limão</h4>
-        <p>Massa Pie (feita a base de farinha e manteiga), recheio de mousse de limão e cobertura de merengue suíço
-          (esse merengue é pré aquecido, onde a base que são as claras, não é servido cru)</p>
-        <span class="preco">Tamanho G (serve até 12 fatias): R$ 135,00</span>
-        <span class="preco">Tamanho P (serve até 6 fatias): R$ 68,00</span>
-      </div>
-    </div>
-    <div class="produto">
-      <img src="" alt="torta-ganache" class="produto-imagem">
-      <div class="produto-info">
-        <h4>Torta Ganache</h4>
-        <p>Massa Pie de cacau black (callebout), recheio 1: Ganache trufada branca | recheio 2: Ganache trufada meio
-          amargo | Cobertura de ganache e raspas de chocolate.
-        </p>
-        <span class="preco">Tamanho G (serve até 12 fatias): R$ 220,00</span>
-        <span class="preco">Tamanho P (serve até 6 fatias): R$ 110,00</span>
-      </div>
-    </div>
-    <div class="produto">
-      <img src="" alt="torta-palha-italiana" class="produto-imagem">
-      <div class="produto-info">
-        <h4>Torta Palha Italiana</h4>
-        <p>Massa de brigadeiro com bolacha maisena, cobertura de ganache e decoração com raspas de chocolate.
-        </p>
-        <span class="preco">Tamanho P (serve até 6 fatias): R$ 140,00</span>
-      </div>
-    </div>
-    <div class="produto">
-      <img src="assets/monoffe.jpeg" alt="monoffe" class="produto-imagem">
-      <div class="produto-info">
-        <h4>Monoffe Nutella </h4>
-        <p>Massa feita com bolacha negresco, recheio de nutella e cobertura de chantininho com morangos e suspiros
-        </p>
-        <span class="preco">Tamanho G (serve até 12 fatias): R$ 240,00</span>
-        <span class="preco">Tamanho P (serve até 6 fatias): R$ 120,00</span>
-      </div>
-    </div>
-  </div>
+    </mat-tab>
+    <mat-tab label="Pães">
+      <h2>Pães</h2>
+      <p>produtos cadastrados em breve...</p>
+    </mat-tab>
+  </mat-tab-group>
   <mat-paginator class="rodape" [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"
     aria-label="Select page">
   </mat-paginator>
